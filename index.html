@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Local Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="login-form">
+            <h2>Login</h2>
+            <form>
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="register-form" class="hidden">
+            <h2>Register</h2>
+            <form>
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div id="chat-interface" class="hidden">
+            <div id="room-list">
+                <h3>Rooms</h3>
+                <!-- Room list will be populated here -->
+            </div>
+            <div id="create-room-form">
+                <h3>Create Room</h3>
+                <form>
+                    <input type="text" id="room-name" placeholder="Room Name" required>
+                    <button type="submit">Create Room</button>
+                </form>
+            </div>
+            <div id="chat-area">
+                <h2 id="room-name-display"></h2>
+                <div id="message-list">
+                    <!-- Messages will be displayed here -->
+                </div>
+                <form id="message-form">
+                    <input type="text" id="message-input" placeholder="Type your message" required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>
